@@ -12,7 +12,6 @@ body {
 /*--------------------------------------------------------- 
 LAYOUT
 ---------------------------------------------------------*/
-
 .row {display: flex;}
 .row--space-between {justify-content: space-between;}
 .row--align-center {align-items: center;}
@@ -74,6 +73,7 @@ DROP-DOWN SEARCH
 ---------------------------------------------------------*/
 .drop-down__search {
     border-bottom: 1px solid #e2e6e9;
+    transition: box-shadow var(--drop-down-transition-duration) ease-in;
 }
 
 .drop-down__search .container {
@@ -90,6 +90,7 @@ DROP-DOWN SEARCH
     font-weight: 600;
     color: hsl(240, 100%, 0%);
     width: 10rem;
+    outline: none;
 }
 
 .drop-down__input::placeholder {
@@ -100,6 +101,8 @@ DROP-DOWN SEARCH
 
 .drop-down__icon-search {
     fill: #c5cad1;
+    width: 24px;
+    height: 24px;
 }
 
 /*--------------------------------------------------------- 
@@ -135,7 +138,6 @@ DROP-DOWN LIST
     display: flex;
     align-items: center;
 }
-
 
 /*--------------------------------------------------------- 
 JAVASCRIPT ACTIVATED
