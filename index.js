@@ -1,3 +1,12 @@
+class DropDownMenu extends HTMLElement {
+
+    constructor() {
+        super();
+    }
+
+    
+}
+
 const createDropDownTitleComponent = () => {
     
     // Create elements
